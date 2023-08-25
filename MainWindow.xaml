@@ -35,7 +35,7 @@
            Word Game 
         </TextBlock>
 
-        <TextBlock Grid.Row="2" Grid.Column="3"
+        <TextBlock x:Name="textBlockDisRandom" Grid.Row="2" Grid.Column="3"
            FontSize="25" 
            HorizontalAlignment="Center"
            VerticalAlignment="Center">
@@ -50,15 +50,15 @@
                        >
                 Type Your Answer
             </TextBlock>
-            <TextBox BorderThickness="3"
+            <TextBox x:Name="textBoxUserInput" BorderThickness="3"
                      Height="30">
                 
             </TextBox>
         </StackPanel>
 
-        <Button Grid.Column="3" Grid.Row="5"
+        <Button x:Name="buttonPlay" Grid.Column="3" Grid.Row="5"
                 Width="100" Height="45"
-                FontSize="30" Background="LightBlue">
+                FontSize="30" Background="LightBlue" Click="buttonPlay_Click">
             Play
         </Button>
 
@@ -66,22 +66,22 @@
                     Grid.ColumnSpan="3" 
                     Orientation="Horizontal"
                     HorizontalAlignment="Center">
-            <Button Grid.Column="3" Grid.Row="5"
+            <Button x:Name="buttonCheck" Grid.Column="3" Grid.Row="5"
                     Width="100" Height="45"
                     FontSize="30" Background="LightBlue"
-                    Margin="20,0,20,0">
+                    Margin="20,0,20,0" Click="buttonCheck_Click">
                 Check
             </Button>
-            <Button Grid.Column="3" Grid.Row="5"
+            <Button x:Name="buttonClear" Grid.Column="3" Grid.Row="5"
                     Width="100" Height="45"
                     FontSize="30" Background="LightBlue"
-                    Margin="20,0,20,0">
+                    Margin="20,0,20,0" Click="buttonClear_Click">
                 Clear
             </Button>
-            <Button Grid.Column="3" Grid.Row="5"
+            <Button x:Name="buttonClose" Grid.Column="3" Grid.Row="5"
                     Width="100" Height="45"
                     FontSize="30" Background="LightBlue"
-                    Margin="20,0,20,0">
+                    Margin="20,0,20,0" Click="buttonClose_Click">
                 Close
             </Button>
         </StackPanel>
